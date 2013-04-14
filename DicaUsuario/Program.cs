@@ -11,9 +11,9 @@
 using System;
 using System.Windows.Forms;
 
-namespace Dica_Usuario
+namespace DicaUsuario
 {
-    static class Program
+    internal static class Program
     {
         /// <summary>
         /// The main entry point for the application.
@@ -23,7 +23,7 @@ namespace Dica_Usuario
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormDica());
+            Application.Run(new DicaForm());
         }
     }
 }

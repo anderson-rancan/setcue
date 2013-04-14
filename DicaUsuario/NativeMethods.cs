@@ -11,7 +11,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace Dica_Usuario
+namespace DicaUsuario
 {
     /// <summary>
     /// Classe com os métodos nativos e seus controles
@@ -23,11 +23,10 @@ namespace Dica_Usuario
     /// </remarks>
     internal static class NativeMethods
     {
-        public const int CB_SETCUEBANNER = 0x1703;
-        public const int EM_SETCUEBANNER = 0x1501;
+        public const UInt32 CB_SETCUEBANNER = 0x1703;
+        public const UInt32 EM_SETCUEBANNER = 0x1501;
 
         [DllImport("user32.dll", CharSet = CharSet.Auto)]
-        public static extern Int32 SendMessage
-          (IntPtr hWnd, int msg, int wParam, [MarshalAs(UnmanagedType.LPWStr)] string lParam);
+        public static extern IntPtr SendMessage(IntPtr hWnd, UInt32 Msg, IntPtr wParam, [MarshalAs(UnmanagedType.LPWStr)] string lParam);
     }
 }

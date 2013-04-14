@@ -1,16 +1,10 @@
-setcue
-======
+SetCue
 
-/*
- * Este conteúdo está protegido de acordo com a licença CPOL 1.02
- * A licença pode ser encontrada no arquivo em anexo deste projeto (LICENSE.PDF) ou pelo link http://wp.me/p1AUuf-q
- * 
- * Autor: Anderson Rancan
- * Data: 08 de Agosto de 2011
- * Site: http://arancan.wordpress.com/2011/08/08/setcue/
- * 
- */
+===============
+http://arancan.wordpress.com/2011/08/08/setcue/
 
+Artigo
+--------
 
 Quanto mais compreensível seu software for para o usuário, melhor sera sua aceitação. O usuário gosta de software simples, prático e de fácil entendimento (e quem não gosta né?). Neste artigo vou publicar uma maneira simples de melhorar o entendimento de seu software, dicas diretamente no objeto de entrada de dados.
 
@@ -34,6 +28,12 @@ SendMessage(TextBoxEndereco, EM_SETCUEBANNER, 0, "Ex.: Av. Salgado Filho, 1234")
 
 Simples né?
 
-Coloquei na minha pasta pública do Google Docs um exemplo completo (Microsoft C# 2008 Express Edition), você pode acessá-lo por aqui. Lá eu separei todos os métodos conforme sugerido pela Microsoft, criei uma classe Framework para "filtrar" e organizar a utilização dos métodos nativos, e deixei um formulário pronto para fácil visualização da aplicação desde exemplo.
+Coloquei no repositório um exemplo completo (Microsoft C# 2010). Lá eu separei todos os métodos conforme sugerido pela Microsoft, criei uma classe Framework para "filtrar" e organizar a utilização dos métodos nativos, e deixei um formulário pronto para fácil visualização da aplicação desde exemplo.
 
 Bom proveito!
+
+
+Licença
+-------
+The Code Project Open License (CPOL)
+http://arancan.wordpress.com/2011/07/15/the-code-project-open-license-cpol-1-02/

@@ -11,7 +11,7 @@
 using System;
 using System.Windows.Forms;
 
-namespace Dica_Usuario
+namespace DicaUsuario
 {
     /// <summary>
     /// Ferramentas para Interface de Usuário
@@ -19,7 +19,7 @@ namespace Dica_Usuario
     /// <remarks>
     /// Esta é a classe que disponbiliza e controla as ferramentas para o restante do software
     /// </remarks>
-    internal sealed class Framework
+    internal static class Framework
     {
         /// <summary>
         /// Define a dica no controle especificado
@@ -28,7 +28,7 @@ namespace Dica_Usuario
         /// <param name="dica">Dica a exibir</param>
         public static void DefinirDica(Control controle, string dica)
         {
-            SetCue(controle, dica);
+            SetCue(controle, (dica == null ? string.Empty : dica.Trim()));
         }
 
         /// <summary>
@@ -37,7 +37,7 @@ namespace Dica_Usuario
         /// <param name="controle">Controle a ser definido</param>
         public static void LimparDica(Control controle)
         {
-            SetCue(controle, string.Empty);
+            DefinirDica(controle, string.Empty);
         }
 
         /// <summary>
@@ -50,7 +50,7 @@ namespace Dica_Usuario
             NativeMethods.SendMessage(
                 controle.Handle,
                 controle is ComboBox ? NativeMethods.CB_SETCUEBANNER : NativeMethods.EM_SETCUEBANNER,
-                0,
+                IntPtr.Zero,
                 string.IsNullOrEmpty(texto) ? string.Empty : texto.Trim()
                 );
         }

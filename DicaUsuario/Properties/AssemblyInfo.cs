@@ -5,13 +5,13 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Dica_Usuario")]
+[assembly: AssemblyTitle("DicaUsuario")]
 [assembly: AssemblyDescription("http://arancan.wordpress.com/")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("http://arancan.wordpress.com/")]
 [assembly: AssemblyProduct("http://arancan.wordpress.com/")]
 [assembly: AssemblyCopyright("http://arancan.wordpress.com/")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyTrademark("http://arancan.wordpress.com/")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("ccacb649-111d-426d-b9d0-d4672e3a91f7")]
+[assembly: Guid("cd70cc6e-4cd8-4afe-b21e-f247f4fc7b62")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("1.1.0.0")]
+[assembly: AssemblyFileVersion("1.1.0.0")]
